@@ -46,8 +46,8 @@ if(argv.list != '') {
 			
 			email = email.replace("\r", '');
 			email = email.replace("\n", '');
-			email = email.replace("\t", '');
-			email = email.replace("\s", '');
+			//email = email.replace("\t", '');
+			//email = email.replace("\s", '');
 			
 			if(email != '') {
 				
