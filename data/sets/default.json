@@ -1,0 +1,29 @@
+{
+	"account" : {
+		"name" : "DevAzbn",
+		"login" : "devazbn@yandex.ru",
+		"pass" : "111",
+		"transport" : "smtps://devazbn%40yandex.ru:111@smtp.yandex.ru"
+	},
+	"tpl" : {
+		"file" : "default.html",
+		"vars" : {
+			"var0001" : "Переменная 1",
+			"var0002" : "Переменная 2",
+			"var0003" : "Переменная 3"
+		}
+	},
+	"msg" : {
+		"subject" : "Тестовая рассылка №1",
+		"body" : "<p>Текст тестовой рассылки</p>"
+	},
+	"interval" : 5000,
+	"items" : [
+		{
+			"email" : "devazbn@yandex.ru",
+			"vars" : {
+				"set__email__name" : "Пользователь Ирина"
+			}
+		}
+	]
+}
