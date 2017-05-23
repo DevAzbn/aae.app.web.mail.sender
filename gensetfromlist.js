@@ -8,7 +8,7 @@ var app = azbn.loadApp(module);
 
 var argv = require('optimist')
 	.usage('Usage: $0 --list=[txt-filename]')
-	.demand(['set'])
+	.demand(['list'])
 	.argv
 ;
 
@@ -43,6 +43,11 @@ if(argv.list != '') {
 		for(var i = 0; i < list_arr.length; i++) {
 			
 			var email = list_arr[i];
+			
+			email = email.replace("\r", '');
+			email = email.replace("\n", '');
+			email = email.replace("\t", '');
+			email = email.replace("\s", '');
 			
 			set.items.push({
 				email : email,
