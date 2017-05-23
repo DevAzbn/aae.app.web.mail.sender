@@ -49,10 +49,14 @@ if(argv.list != '') {
 			email = email.replace("\t", '');
 			email = email.replace("\s", '');
 			
-			set.items.push({
-				email : email,
-				vars : {},
-			});
+			if(email != '') {
+				
+				set.items.push({
+					email : email,
+					vars : {},
+				});
+				
+			}
 			
 		}
 		
